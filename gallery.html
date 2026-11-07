@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Md. Maruf Hossain, B.Sc. EEE (BUET). Twistronics, non-linear optics, low energy electronics and in-memory computing.">
+<title>Gallery | Md. Maruf Hossain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Icons used for the email, GitHub and LinkedIn links -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57l-.02-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+</svg>
+
+<header class="bar">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg class="logo" viewBox="0 0 40 40" aria-hidden="true">
+        <polygon points="11,4 29,4 38,20 29,36 11,36 2,20" fill="#8a5a3c" stroke="#1c0a0b" stroke-width="2.5"/>
+        <polygon points="12,8 26,8 33,20 26,32 12,32 6,20" fill="none" stroke="#c49a74" stroke-width="1.5" transform="rotate(8 20 20)"/>
+      </svg>
+      Maruf Hossain @ BUET
+    </a>
+    <nav aria-label="Pages">
+      <ul>
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="banner small">
+  <canvas id="moire" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h1>Gallery</h1>
+  </div>
+</div>
+
+<main>
+  <!-- GALLERY -->
+  <section class="page" id="gallery">
+    <div class="wrap wide">
+      <p style="margin:0 0 28px;color:var(--muted);max-width:65ch">Life outside the lab: trips around Bangladesh, friends, and the people who made my years at BUET what they were. Click any photo to see it larger.</p>
+      <div class="gallery" id="gallery-list"></div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-btn lb-close" type="button" aria-label="Close">×</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">‹</button>
+    <img id="lb-img" alt="">
+    <p id="lb-cap"></p>
+    <button class="lb-btn lb-next" type="button" aria-label="Next photo">›</button>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Md. Maruf Hossain. Updated November 2026.</span>
+    <span>Department of Electrical and Electronic Engineering, BUET, Dhaka-1000, Bangladesh</span>
+    <div class="social" style="margin-top:10px">
+      <a href="mailto:marufh.eee.buet@gmail.com" aria-label="Email"><svg class="i stroke"><use href="#i-mail"/></svg></a>
+      <a href="https://github.com/mmarufh" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+      <a href="https://www.linkedin.com/in/mmarufh-eee-buet" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- Gallery ----------
+   Write your caption between the quotes after  caption:  for each photo.
+   A photo with an empty caption shows no caption.
+   To add a photo: upload it next to this file (e.g. gallery-15.jpg), then copy one line below,
+   change the file name and write its caption. To remove a photo, delete its line. */
+const GALLERY = [
+  { file: "gallery-01.jpg", caption: "" },  // group selfie on a rooftop next to cooling towers
+  { file: "gallery-02.jpg", caption: "" },  // standing in front of a campus building, sunglasses
+  { file: "gallery-03.jpg", caption: "" },  // cricket stadium at night
+  { file: "gallery-04.jpg", caption: "" },  // on a suspension bridge, arms crossed
+  { file: "gallery-05.jpg", caption: "" },  // at a waterfall with a bamboo stick
+  { file: "gallery-06.jpg", caption: "" },  // group selfie at an evening event, purple lights
+  { file: "gallery-07.jpg", caption: "" },  // arms open facing a green hill
+  { file: "gallery-08.jpg", caption: "" },  // big group in a classroom, hands up
+  { file: "gallery-09.jpg", caption: "" },  // large group photo in a hall
+  { file: "gallery-10.jpg", caption: "" },  // group selfie by a green brick wall
+  { file: "gallery-11.jpg", caption: "" },  // sitting on the beach facing the sea
+  { file: "gallery-12.jpg", caption: "" },  // hilltop viewpoint over the valley
+  { file: "gallery-13.jpg", caption: "" },  // selfie on a hill trail
+  { file: "gallery-14.jpg", caption: "" },  // selfie walking through a narrow stream gorge
+];
+
+(() => {
+  const list = document.getElementById("gallery-list");
+  const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  GALLERY.forEach((g, i) => {
+    const fig = document.createElement("figure");
+    fig.innerHTML = `<button type="button" data-i="${i}" aria-label="Open photo ${i + 1}">
+        <img src="${g.file}" alt="${esc(g.caption || "Photo " + (i + 1))}" loading="lazy">
+      </button>` + (g.caption ? `<figcaption>${esc(g.caption)}</figcaption>` : "");
+    list.appendChild(fig);
+  });
+
+  const lb = document.getElementById("lightbox"), img = document.getElementById("lb-img"), cap = document.getElementById("lb-cap");
+  let cur = 0;
+  const show = i => {
+    cur = (i + GALLERY.length) % GALLERY.length;
+    img.src = GALLERY[cur].file; img.alt = GALLERY[cur].caption || "Photo " + (cur + 1);
+    cap.textContent = GALLERY[cur].caption; lb.hidden = false;
+  };
+  const close = () => { lb.hidden = true; };
+  list.addEventListener("click", e => { const b = e.target.closest("button[data-i]"); if (b) show(+b.dataset.i); });
+  lb.querySelector(".lb-close").onclick = close;
+  lb.querySelector(".lb-prev").onclick = () => show(cur - 1);
+  lb.querySelector(".lb-next").onclick = () => show(cur + 1);
+  lb.addEventListener("click", e => { if (e.target === lb) close(); });
+  document.addEventListener("keydown", e => {
+    if (lb.hidden) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowLeft") show(cur - 1);
+    if (e.key === "ArrowRight") show(cur + 1);
+  });
+})();
+</script>
+<script src="site.js"></script>
+</body>
+</html>

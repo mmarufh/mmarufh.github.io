@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Md. Maruf Hossain, B.Sc. EEE (BUET). Twistronics, non-linear optics, low energy electronics and in-memory computing.">
+<!--
+  HOW TO EDIT
+  - Each tab is its own file: index.html (Welcome), research.html, publications.html,
+    projects.html, contact.html. Open the file for the tab you want to change.
+  - Text: find the sentence (Ctrl+F) and change it.
+  - Projects: in projects.html, edit the PROJECTS list inside <script> at the bottom.
+  - Gallery: in gallery.html, edit the GALLERY list at the bottom. Gallery photos are the files named gallery-01.jpg, gallery-02.jpg, ...
+  - Look of every page (colours, fonts, spacing): style.css. Change it once, all pages follow.
+  - Menu tabs: the <nav> block near the top of each page. If you add a page, add its tab to every file.
+  - Photo: replace photo.jpg with another image of the same name.
+-->
+<title>Md. Maruf Hossain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Icons used for the email, GitHub and LinkedIn links -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57l-.02-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+</svg>
+
+<header class="bar">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg class="logo" viewBox="0 0 40 40" aria-hidden="true">
+        <polygon points="11,4 29,4 38,20 29,36 11,36 2,20" fill="#8a5a3c" stroke="#1c0a0b" stroke-width="2.5"/>
+        <polygon points="12,8 26,8 33,20 26,32 12,32 6,20" fill="none" stroke="#c49a74" stroke-width="1.5" transform="rotate(8 20 20)"/>
+      </svg>
+      Maruf Hossain @ BUET
+    </a>
+    <nav aria-label="Pages">
+      <ul>
+        <li><a href="index.html" aria-current="page">Welcome</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="banner">
+  <canvas id="moire" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h1>Hi, I'm Maruf</h1>
+    <p>I'm curious about what happens to light when two atom-thin layers are twisted against each other.</p>
+    <div class="social">
+      <a href="mailto:marufh.eee.buet@gmail.com"><svg class="i stroke"><use href="#i-mail"/></svg>marufh.eee.buet@gmail.com</a>
+      <a href="https://github.com/mmarufh" target="_blank" rel="noopener"><svg class="i"><use href="#i-github"/></svg>GitHub</a>
+      <a href="https://www.linkedin.com/in/mmarufh-eee-buet" target="_blank" rel="noopener"><svg class="i"><use href="#i-linkedin"/></svg>LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- WELCOME -->
+  <section class="page" id="welcome">
+    <div class="wrap">
+      <!-- BIO (intro paragraph): edit the text between <p> and </p> -->
+      <div class="lead justify">
+        <p>I'm Md. Maruf Hossain. I recently finished my B.Sc. in Electrical and Electronic Engineering at <a href="https://www.buet.ac.bd" target="_blank" rel="noopener">BUET</a>, where I majored in Electronics. For the past two years I've been working on a question that sounds simple: what happens to the way a 2D material responds to light when you twist it against another layer? Working on it pulled me into nonlinear optics, first-principles modelling and device electrostatics. It also kept bringing me back to one thing. A prediction only matters once it lines up with what a real sample does under a laser.</p>
+      </div>
+
+      <img class="portrait" style="margin-top:40px" src="photo.jpg" alt="Portrait of Md. Maruf Hossain" width="960" height="1280">
+
+      <div class="addr">
+        <span><strong>Md. Maruf Hossain</strong></span>
+        <span>B.Sc. in Electrical and Electronic Engineering</span>
+        <span>Bangladesh University of Engineering and Technology (BUET)</span>
+        <span>Dhaka-1000, Bangladesh</span>
+        <div class="social">
+          <a href="mailto:marufh.eee.buet@gmail.com"><svg class="i stroke"><use href="#i-mail"/></svg>marufh.eee.buet@gmail.com</a>
+          <a href="https://github.com/mmarufh" target="_blank" rel="noopener"><svg class="i"><use href="#i-github"/></svg>GitHub</a>
+          <a href="https://www.linkedin.com/in/mmarufh-eee-buet" target="_blank" rel="noopener"><svg class="i"><use href="#i-linkedin"/></svg>LinkedIn</a>
+        </div>
+      </div>
+
+      <h2 class="sub" style="margin-top:48px">Research Interests</h2>
+      <ul class="plain">
+        <li>Twistronics</li>
+        <li>Non-linear Optics</li>
+        <li>Low Energy Electronics</li>
+        <li>In Memory Computing</li>
+      </ul>
+      <a class="more" href="research.html">Read more about my research →</a>
+
+      <h2 class="sub">Education</h2>
+      <ul class="plain">
+        <li>B.Sc. in Electrical and Electronic Engineering, BUET, Jan 2022 – Jun 2026<span class="meta">Major: Electronics · CGPA 3.70 / 4.00 · Thesis advisor: Prof. M. Shah Alam</span></li>
+        <li>IELTS Academic, Oct 2026<span class="meta">Overall 7.5 (Listening 8.5 · Reading 8.0 · Writing 7.0 · Speaking 6.5)</span></li>
+      </ul>
+
+      <!-- ABOUT ME: each <p> ... </p> is one paragraph. Edit, add or delete paragraphs. -->
+      <h2 class="sub">About Me</h2>
+      <div class="lead justify">
+        <p>My thesis with Prof. M. Shah Alam started with twisted bilayer graphene. Ordinary graphene is centrosymmetric, so it shouldn't give off a second harmonic at all. A twist can break that symmetry, and I wanted to know by how much, and how the second- and third-harmonic signals change as the angle changes. That question grew into my first manuscript, now under review at <i>Nano Letters</i>. In it we show that the polar moiré potential of a twisted hBN substrate can switch on second-order optical responses in bilayer graphene.</p>
+        <p>Along the way I learned to take a crystal structure all the way to something an optics lab would recognise: a polarisation pattern, a spectrum, a change with gate voltage or twist angle. I've also spent plenty of time on the hardware side of electronics. I designed a wideband RF amplifier and a low-power ALU in Cadence, built an IoT security system with real sensors and a camera, and spent December and January at THiNK Limited seeing how embedded products are made and tested. Before the thesis, I worked with Dr. Ahmed Zubair at RISE, BUET, on getting flexible kesterite solar cells to trap more light using nanoparticles.</p>
+        <p>The part of research I enjoy most is the moment a prediction meets a measurement. Next, I'd like to keep working on twisted and ferroelectric 2D materials, their nonlinear optics, and the low-power devices they could lead to, in a group where modelling, fabrication and optical measurement sit close together.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Md. Maruf Hossain. Updated November 2026.</span>
+    <span>Department of Electrical and Electronic Engineering, BUET, Dhaka-1000, Bangladesh</span>
+    <div class="social" style="margin-top:10px">
+      <a href="mailto:marufh.eee.buet@gmail.com" aria-label="Email"><svg class="i stroke"><use href="#i-mail"/></svg></a>
+      <a href="https://github.com/mmarufh" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+      <a href="https://www.linkedin.com/in/mmarufh-eee-buet" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
