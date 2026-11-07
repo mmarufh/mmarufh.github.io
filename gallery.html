@@ -96,13 +96,12 @@ const GALLERY = [
   { file: "gallery-10.jpg", caption: "" },  // group selfie by a green brick wall
   { file: "gallery-11.jpg", caption: "" },  // sitting on the beach facing the sea
   { file: "gallery-12.jpg", caption: "" },  // hilltop viewpoint over the valley
-  { file: "gallery-13.jpg", caption: "" },  // selfie on a hill trail
   { file: "gallery-14.jpg", caption: "" },  // selfie walking through a narrow stream gorge
 ];
 
 (() => {
   const list = document.getElementById("gallery-list");
-  const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const esc = s => s.replace(/[&<>\"]/g, c => ({"&":"&amp;","<":"&lt;", ">":"&gt;", '"':"&quot;"}[c]));
   GALLERY.forEach((g, i) => {
     const fig = document.createElement("figure");
     fig.innerHTML = `<button type="button" data-i="${i}" aria-label="Open photo ${i + 1}">
